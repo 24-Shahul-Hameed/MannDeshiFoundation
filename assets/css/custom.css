@@ -3580,7 +3580,7 @@ select.select-service option {
     float: left;
     font-family: 'Saira', sans-serif;
     line-height: 1;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .page-title li a:hover {
