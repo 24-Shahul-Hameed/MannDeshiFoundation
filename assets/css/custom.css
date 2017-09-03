@@ -2675,17 +2675,18 @@ select option {
 ---------------*/
 
 .promo-one .button-aylen.style-aylen {
-    background: #FFF;
-    color: darkgreen;
-    border: 1px solid #fff;
-    padding: 25px 0 40px;
+    background: #ffcc01;
+    color: black;
+    border: 1px solid #000;
+    padding: 14px 0 32px;
     /* line-height: 43px; */
     border-radius: 0px;
     text-align: center;
     display: block;
     width: 100%;
-    font-size: 25px;
+    /* font-size: 25px; */
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 
