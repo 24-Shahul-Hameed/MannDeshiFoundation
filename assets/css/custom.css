@@ -11,13 +11,17 @@
 	[ 7. Loding Bar ]
 	[ 8. ScrollUp ]
 ==============================================================*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Saira:100,300,400,500,600');
+
 /* 
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Saira', sans-serif;
 */
+
+
 /*
 [ 1. General Code ]
 ================ */
@@ -44,6 +48,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 
 /*::-moz-selection {
     background: #349d40;
@@ -110,6 +115,12 @@ textarea:focus {
     justify-content: center;
     align-items: center;
 }
+
+.flex div {
+    flex: 1 1 auto;
+}
+
+
 /* installed fonts
 ---------------- */
 
@@ -906,8 +917,9 @@ p {
 .white-color {
     color: #ffffff;
 }
+
 .green-color {
-    color: #349d40; 
+    color: #349d40;
 }
 
 
@@ -1026,22 +1038,27 @@ p {
 .white-bg {
     background: #ffffff none repeat scroll 0 0;
 }
+
 .light-grey-bg {
     background: #f1f1f1 none repeat scroll 0 0;
 }
+
 .theme-bg {
     background: #349d40 none repeat scroll 0 0;
 }
+
 .transparent-bg {
     background-color: transparent !important;
 }
+
 
 /* background image 
 ==================================*/
 
 .bg-image-1 {
     background: rgba(0, 0, 0, 0) url("../img/vidya-kirve.jpg") repeat scroll center center/cover;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
@@ -1060,6 +1077,7 @@ p {
 .bg-image-5 {
     background: rgba(0, 0, 0, 0) url("../img/bg/5.jpg") repeat scroll center bottom/cover;
 }
+
 .bg-chetna {
     background: rgba(0, 0, 0, 0) url("../img/bg-chetna.jpg") repeat scroll center bottom/cover;
 }
@@ -1714,6 +1732,23 @@ select option {
     -o-transition: all 300ms ease;
 }
 
+.mainmenu .navigation li.highlight {
+    background: #ffcc01;
+    float: right;
+    position: absolute;
+    right: 0;
+    font-weight: 600;
+}
+
+.mainmenu .navigation li.highlight a {
+    color: #000;
+    font-weight: 900;
+}
+
+.mainmenu .navigation li.highlight a:hover {
+    color: #FFF;
+}
+
 
 /* menu hover one
 -----------------*/
@@ -1917,10 +1952,12 @@ select option {
     border: 1px dashed #349d40;
     border-top: 0;
 }
+
 .sticky-wrapper {
     z-index: 999999;
     height: auto !important;
 }
+
 
 /* Search box
 --------------*/
@@ -2181,18 +2218,18 @@ select option {
 
 .arrow-box {
     position: relative;
-    border-top: 1px solid #333;
+    border-top: 1px solid #349d40;
 }
 
 .arrow-box:after {
-    background: #333 none repeat scroll 0 0;
-    border-color: #333;
+    background: #349d40 none repeat scroll 0 0;
+    border-color: #349d40;
     border-radius: 3px 0 0;
     border-style: solid none none solid;
     border-width: 1px medium medium 1px;
     content: "";
     height: 26px;
-    left: 45px;
+    right: 0;
     position: absolute;
     top: -13px;
     -webkit-transform: rotate(45deg);
@@ -2387,7 +2424,7 @@ select option {
 
 .header-style-one .header-top .right a {
     border: 1px solid #fff;
-    border-radius: 20px;
+    border-radius: 0;
 }
 
 .header-style-one .header-top li.appo-btn a:hover {
@@ -2396,8 +2433,8 @@ select option {
 
 .header-style-one .top-contact li.appo-btn {
     background: #000 none repeat scroll 0 0;
-    border-radius: 22px;
-    padding: 4px;
+    border-radius: 0;
+    padding: 3px;
 }
 
 .header-style-one .social-icon li a {
@@ -2421,6 +2458,18 @@ select option {
 .header-style-one .mainmenu .navigation li a {
     line-height: 43px;
     padding: 0px 20px;
+}
+
+.header-style-one .mainmenu .dropdown li.list-header {
+    background: #349d40;
+}
+
+.header-style-one .mainmenu .dropdown li.list-header a {
+    color: #FFF;
+}
+
+.header-style-one .mainmenu .dropdown li.dvd {
+    border-top: 2px solid #349d40;
 }
 
 .header-style-one .mainmenu .navigation li a:hover {
@@ -2573,7 +2622,7 @@ select option {
 
 .choose-man {
     position: relative;
-    top: 20px;
+    bottom: -100px;
     margin: 0 -10px;
 }
 
@@ -2626,11 +2675,17 @@ select option {
 ---------------*/
 
 .promo-one .button-aylen.style-aylen {
-    background: transparent;
+    background: #FFF;
+    color: darkgreen;
     border: 1px solid #fff;
-    padding: 0 50px;
-    line-height: 43px;
-    border-radius: 25px;
+    padding: 25px 0 40px;
+    /* line-height: 43px; */
+    border-radius: 0px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 
@@ -3091,17 +3146,21 @@ hr.horizontal-line {
     background: #3c7b2e none repeat scroll 0 0;
 }
 
+.top-contact {
+    margin-top: 10px;
+}
+
 .top-contact.right li i {
     border: 1px solid #349d40;
     border-radius: 50%;
     color: #349d40;
     float: left;
-    font-size: 26px;
-    height: 50px;
-    line-height: 50px;
-    margin-right: 15px;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 15px;
     text-align: center;
-    width: 50px;
+    width: 35px;
 }
 
 .top-contact.right li h4,
@@ -3308,7 +3367,7 @@ hr.horizontal-line {
 
 .service-two .single-item .text {
     background: rgba(36, 49, 65, 0.9) none repeat scroll 0 0;
-   /* position: absolute;*/
+    /* position: absolute;*/
     top: 0;
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
@@ -3438,9 +3497,11 @@ hr.horizontal-line {
 .choose-two .choose-man {
     top: 4px;
 }
+
 .aboutus-area {
     background: #fefefe none repeat scroll 0 0;
 }
+
 
 /* testimonial two
 --------------- */
@@ -3453,7 +3514,7 @@ hr.horizontal-line {
 }
 
 .testimonial-two .single-slide .content {
-   /* border: 1px solid #349d40;*/
+    /* border: 1px solid #349d40;*/
     padding-right: 30px;
 }
 
@@ -3561,10 +3622,34 @@ select.select-service option {
     color: #cccccc;
 }
 
+.absolute {
+    position: absolute;
+}
+
+.card.hovercard h3 {
+    z-index: 999;
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: normal;
+}
+
 
 /* 
 [ 5. Pages ]
 ===================================== */
+
+.partner .logo {
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 5px #e8e8e8;
+    margin: 0 0 30px;
+}
+
+.partner .logo:hover {
+    box-shadow: 0 0 5px #cbffcb;
+}
 
 
 /* Pages Header title */
@@ -4519,11 +4604,262 @@ p.bg-p {
     box-shadow: none;
     border-color: transparent;
 }
+
+
 /*==========Sub Menu=v==========*/
-
-
 
 
 /******************************Drop-down menu work on hover**********************************/
 
+.card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+.card .card-heading {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.card .card-heading.simple {
+    font-size: 20px;
+    font-weight: 300;
+    color: #777;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card .card-heading.image img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    vertical-align: top;
+    border: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.card .card-heading.image .card-heading-header {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card .card-heading.image .card-heading-header h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.card .card-heading.image .card-heading-header span {
+    font-size: 12px;
+    color: #999999;
+}
+
+.card .card-body {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.card .card-media {
+    padding: 0 20px;
+    margin: 0 -14px;
+}
+
+.card .card-media img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .card-actions {
+    min-height: 30px;
+    padding: 0 20px 20px 20px;
+    margin: 20px 0 0 0;
+}
+
+.card .card-comments {
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.card .card-comments .comments-collapse-toggle {
+    padding: 0;
+    margin: 0 20px 12px 20px;
+}
+
+.card .card-comments .comments-collapse-toggle a,
+.card .card-comments .comments-collapse-toggle span {
+    padding-right: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-comments .media-heading {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card.people {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 300px;
+    padding-top: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card.people:first-child {
+    margin-left: 0;
+}
+
+.card.people .card-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 170px;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.card.people .card-top.green {
+    background-color: #53a93f;
+}
+
+.card.people .card-top.blue {
+    background-color: #427fed;
+}
+
+.card.people .card-info {
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    width: 100%;
+    height: 101px;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.people .card-info .title {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #404040;
+}
+
+.card.people .card-info .desc {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.people .card-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+}
+
+.card.hovercard .cardheader {
+    background-size: cover;
+    height: 135px;
+    -webkit-filter: grayscale(1) blur(5px);
+    filter: grayscale(1) blur(5px);
+}
+
+.card.hovercard .cardheader.nita {
+    background: url("../img/Nita-Jadhav-banner.jpg");
+}
+
+.card.hovercard .avatar {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.card.hovercard .info {
+    padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+
+.btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 18px;
+}
