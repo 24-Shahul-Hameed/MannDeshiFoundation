@@ -145,7 +145,7 @@ textarea:focus {
 -------------- */
 
 a {
-    color: #ffffff;
+    color: #349d40;
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 400;
 }
@@ -159,7 +159,7 @@ a>* {
 
 a:focus,
 a:hover {
-    color: #349d40;
+    color: #000;
     outline: none;
     text-decoration: none;
 }
@@ -1830,7 +1830,7 @@ select option {
     position: absolute;
     left: 0px;
     top: 140%;
-    width: 190px;
+    width: 210px;
     z-index: 100;
     background: #fff;
     visibility: hidden;
@@ -2473,7 +2473,7 @@ select option {
 }
 
 .header-style-one .mainmenu .navigation li a:hover {
-    background: #349d40 none repeat scroll 0 0;
+    background: rgba(52, 157, 64, 0.7) none repeat scroll 0 0;
 }
 
 .header-style-one .menu-hover-1>li>a:before,
