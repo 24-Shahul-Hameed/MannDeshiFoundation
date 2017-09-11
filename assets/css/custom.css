@@ -1081,6 +1081,33 @@ p {
 .bg-chetna {
     background: rgba(0, 0, 0, 0) url("../img/bg-chetna.jpg") repeat scroll center bottom/cover;
 }
+.bg-champion {
+    background: rgba(0, 0, 0, 0) url("../img/champions.jpg") repeat scroll center bottom/cover;
+}
+.bg-champion {
+    background: rgba(0, 0, 0, 0) url("../img/champions.jpg") repeat scroll center bottom/cover;
+}
+.bg-busi-school {
+    background: rgba(0, 0, 0, 0) url("../img/business-school.jpg") repeat scroll center bottom/cover;
+}
+.bg-cham-comm {
+    background: rgba(0, 0, 0, 0) url("../img/chamber-commerce.jpg") repeat scroll center bottom/cover;
+}
+.bg-comm-radio {
+	    background: rgba(0, 0, 0, 0) url("../img/community-radio.jpg") repeat scroll center bottom/cover;
+}
+.bg-farm-market {
+	    background: rgba(0, 0, 0, 0) url("../img/farm-market.jpg") repeat scroll center bottom/cover;
+}
+.bg-girls-wheels {
+	background: rgba(0, 0, 0, 0) url("../img/girls-whells.jpg") repeat scroll center bottom/cover;
+}
+.bg-water-conser {
+	background: rgba(0, 0, 0, 0) url("../img/water-conservation.jpg") repeat scroll center bottom/cover;
+}
+.bg-young-girls {
+	background: rgba(0, 0, 0, 0) url("../img/young-girl.jpg") repeat scroll center bottom/cover;
+}
 
 
 /* background overlay 
