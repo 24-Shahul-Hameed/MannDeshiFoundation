@@ -4833,14 +4833,8 @@ p.bg-p {
 }
 
 .card.hovercard .cardheader {
-    background-size: cover;
-    height: 135px;
     -webkit-filter: blur(5px);
     filter: blur(5px);
-}
-
-.card.hovercard .cardheader.nita {
-    background: url("../img/Nita-Jadhav-banner.jpg");
 }
 
 .card.hovercard .avatar {
