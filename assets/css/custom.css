@@ -113,11 +113,13 @@ textarea:focus {
 .flex {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.flex div {
+.flex>div {
     flex: 1 1 auto;
+    margin: 0 15px 30px;
+    padding: 0;
 }
 
 
@@ -3656,14 +3658,14 @@ select.select-service option {
 
 .card.hovercard h3 {
     z-index: 999;
-    color: #fff;
-    margin: 30px 0;
-    text-align: center;
-    display: block;
+    color: #000;
+    margin: 10px 0;
     width: 100%;
     font-weight: normal;
 }
-
+.bg-grey {
+    background-color: rgba(214, 224, 226, 0.2);
+}
 
 /* 
 [ 5. Pages ]
@@ -4642,7 +4644,7 @@ p.bg-p {
 .card {
     padding-top: 20px;
     margin: 10px 0 20px 0;
-    background-color: rgba(214, 224, 226, 0.2);
+    /*background-color: rgba(214, 224, 226, 0.2);*/
     border-top-width: 0;
     border-bottom-width: 2px;
     -webkit-border-radius: 3px;
@@ -4829,12 +4831,14 @@ p.bg-p {
     padding-top: 0;
     overflow: hidden;
     text-align: center;
-    background-color: rgba(214, 224, 226, 0.2);
+    /*background-color: rgba(214, 224, 226, 0.2);*/
+    margin: 0;
 }
 
-.card.hovercard .cardheader {
+.card.hovercard .blur {
     -webkit-filter: blur(5px);
     filter: blur(5px);
+    width: 100%;
 }
 
 .card.hovercard .avatar {
@@ -4842,7 +4846,10 @@ p.bg-p {
     top: -50px;
     margin-bottom: -50px;
 }
-
+.card.hovercard .cardheader {
+    height: 135px;
+    overflow: hidden;
+}
 .card.hovercard .avatar img {
     width: 100px;
     height: 100px;
@@ -4855,7 +4862,7 @@ p.bg-p {
 }
 
 .card.hovercard .info {
-    padding: 4px 8px 10px;
+    padding: 4px 15px 15px;
 }
 
 .card.hovercard .info .title {
