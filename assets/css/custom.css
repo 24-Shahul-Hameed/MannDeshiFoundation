@@ -112,14 +112,13 @@ textarea:focus {
 
 .flex {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 .flex>div {
-    flex: 1 1 auto;
-    margin: 0 15px 30px;
-    padding: 0;
+    /*flex: 1 1 auto;*/
+    margin: 0 0px 30px;
+    
 }
 
 
@@ -1083,6 +1082,13 @@ p {
 .bg-chetna {
     background: rgba(0, 0, 0, 0) url("../img/bg-chetna.jpg") repeat scroll center bottom/cover;
 }
+.bg-nita {
+     background: rgba(0, 0, 0, 0) url("../img/Nita-Jadhav.jpg") no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(5px) grayscale();
+    filter: blur(5px) grayscale();
+    width: 100%;
+}
 .bg-champion {
     background: rgba(0, 0, 0, 0) url("../img/champions.jpg") repeat scroll center bottom/cover;
 }
@@ -1110,8 +1116,14 @@ p {
 .bg-young-girls {
 	background: rgba(0, 0, 0, 0) url("../img/young-girl.jpg") repeat scroll center bottom/cover;
 }
-
-
+.profile-pic-section {
+    border-top: 50px solid green; 
+}
+.profile-pic-section .heading  {
+    position: absolute;
+    margin-top: -100px;
+    width: 100%;
+}
 /* background overlay 
 ===================================*/
 
@@ -3664,7 +3676,7 @@ select.select-service option {
     font-weight: normal;
 }
 .bg-grey {
-    background-color: rgba(214, 224, 226, 0.2);
+   /* background-color: rgba(214, 224, 226, 0.2);*/
 }
 
 /* 
@@ -4840,7 +4852,11 @@ p.bg-p {
     filter: blur(5px);
     width: 100%;
 }
-
+.blur {
+    -webkit-filter: blur(5px) grayscale();
+    filter: blur(5px) grayscale();
+    width: 100%;
+}
 .card.hovercard .avatar {
     position: relative;
     top: -50px;
@@ -4862,7 +4878,7 @@ p.bg-p {
 }
 
 .card.hovercard .info {
-    padding: 4px 15px 15px;
+    padding: 4px 30px 30px;
 }
 
 .card.hovercard .info .title {
