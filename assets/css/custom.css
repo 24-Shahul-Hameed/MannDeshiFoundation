@@ -217,7 +217,7 @@ h6 {
 }
 
 p {
-    margin: 0px;
+    margin: 0 0 15px;
     line-height: 24px;
 }
 
@@ -862,6 +862,10 @@ p {
     font-size: 12px
 }
 
+.font-14 {
+    font-size: 14px
+}
+
 .font-16 {
     font-size: 16px
 }
@@ -1061,60 +1065,70 @@ p {
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .nita-jadhav-bg {
     background: rgba(0, 0, 0, 0) url("../img/Nita-Jadhav.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .savita-bhosale-bg {
     background: rgba(0, 0, 0, 0) url("../img/savita-bosale.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .rupali-datta-bg {
     background: rgba(0, 0, 0, 0) url("../img/rupali-datta.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .nilam-desmukh-bg {
     background: rgba(0, 0, 0, 0) url("../img/nilam-desmukh.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .nilam-jadhav-bg {
     background: rgba(0, 0, 0, 0) url("../img/nilam-jadhav.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .jayshri-gosavi-bg {
     background: rgba(0, 0, 0, 0) url("../img/jayshri-gosavi.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .lata-waikar-bg {
     background: rgba(0, 0, 0, 0) url("../img/lata-waikar.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .savita-nalwade-bg {
     background: rgba(0, 0, 0, 0) url("../img/savita-nalwade.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .savita-yadav-bg {
     background: rgba(0, 0, 0, 0) url("../img/savita-yadav.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
 .default-bg {
     background: rgba(0, 0, 0, 0) url("../img/default-banner.jpg") repeat scroll center center/cover;
     -webkit-filter: grayscale(100%);
@@ -1201,17 +1215,17 @@ p {
 }
 
 .profile-pic-section .heading {
-    
     margin-top: -62px;
-    
 }
 
 .profile-pic-section img {
     border: 5px solid #FFF;
 }
+
 .profile-pic-section .title {
     padding-top: 100px;
 }
+
 
 /* background overlay 
 ===================================*/
@@ -1714,7 +1728,12 @@ ul li,
 nav ul,
 nav ul li {
     float: none;
-    list-style: none;
+    list-style: square;
+    list-style-position: inside;
+}
+
+ul {
+    margin-bottom: 15px;
 }
 
 nav ul li:hover,
@@ -1726,6 +1745,20 @@ nav ul a {
     font-size: inherit;
 }
 
+ul.navigation {
+    margin: 0;
+}
+
+ul.navigation li {
+    float: none;
+    list-style: none;
+}
+.top-contact ul {
+    margin-bottom: 0;
+}
+.top-contact ul li {
+    list-style: none;
+}
 @media only screen and (min-width: 1200px) {
     .container {
         width: 1170px;
@@ -2779,6 +2812,7 @@ select option {
 
 .single-choose .single-list p {
     color: #969696;
+    margin: 0;
 }
 
 .single-choose.text-left .icon {
@@ -3763,6 +3797,7 @@ select.select-service option {
     margin: 10px 0;
     width: 100%;
     font-weight: normal;
+    text-align: center;
 }
 
 .bg-grey {
@@ -3799,6 +3834,7 @@ select.select-service option {
     font-family: 'Saira', sans-serif;
     line-height: 1;
     text-transform: capitalize;
+    list-style: none;
 }
 
 .page-title li a:hover {
@@ -4957,7 +4993,7 @@ p.bg-p {
 }
 
 .card.hovercard .cardheader {
-   /* height: 135px;*/
+    /* height: 135px;*/
     overflow: hidden;
 }
 
@@ -4990,6 +5026,7 @@ p.bg-p {
     line-height: 20px;
     color: #737373;
     text-overflow: ellipsis;
+    text-align: justify;
 }
 
 .card.hovercard .bottom {
