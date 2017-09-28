@@ -3296,7 +3296,9 @@ hr.horizontal-line {
     font-weight: 700;
     margin: 0 10px;
 }
-
+.footer-bottom p {
+    margin: 0;
+}
 
 /* Home version two
 ---------------------- */
